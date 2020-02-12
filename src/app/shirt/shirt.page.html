@@ -1,0 +1,232 @@
+<ion-header no-border>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="md-arrow-round-back"
+        defaultHref="/tab1"
+        color="primary"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="primary">Shirt</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="male" checked>
+      <ion-label>
+        Male
+      </ion-label>
+      <ion-icon name="man"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="female">
+      <ion-label>
+        Female
+      </ion-label>
+      <ion-icon name="woman"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="kids">
+      <ion-label>
+        Kids
+      </ion-label>
+      <ion-icon name="happy"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'male'">
+      <ion-card tappable="true" class="ion-activatable rounded">
+        <img src="../assets/az.png" />
+        <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        <ion-card-content>
+          <ion-card-subtitle>
+            <p class="small title-pinky-red">SHIRT</p>
+          </ion-card-subtitle>
+          <ion-card-title>
+            Full Suits
+          </ion-card-title>
+          <ion-card-subtitle>
+            <p>RM 150.00</p>
+            <ion-buttons>
+              <ion-button routerLink="/shirtdetails">
+                <!--<ion-icon name="list" outline></ion-icon>-->
+                <p class="x-small">View details...</p>
+              </ion-button>
+            </ion-buttons>
+          </ion-card-subtitle>
+        </ion-card-content>
+        <ion-footer>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-buttons>
+                  <ion-button>
+                    <ion-icon name="heart"></ion-icon>
+                    <p class="title-pinky-red padding">2.5K Likes</p>
+                  </ion-button>
+                </ion-buttons>
+              </ion-col>
+              <ion-col>
+                <div class="ion-text-end">
+                  <ion-buttons>
+                    <ion-button color="primary">
+                      <ion-icon name="cart"></ion-icon>
+                      <p class="title-pinky-red padding">Add to Cart</p>
+                    </ion-button>
+                  </ion-buttons>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-footer>
+      </ion-card>
+
+      <ion-card tappable="true" class="ion-activatable rounded">
+        <img src="../assets/shirt.jpg" />
+        <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        <ion-card-content>
+          <ion-card-subtitle>
+            <p class="small title-pinky-red">SHIRT</p>
+          </ion-card-subtitle>
+          <ion-card-title>
+            Long Sleeve Shirt
+          </ion-card-title>
+          <ion-card-subtitle>
+            <p>RM 75.00</p>
+            <ion-buttons>
+              <ion-button>
+                <!--<ion-icon name="list" outline></ion-icon>-->
+                <p class="x-small">View details...</p>
+              </ion-button>
+            </ion-buttons>
+          </ion-card-subtitle>
+        </ion-card-content>
+        <ion-footer>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-buttons>
+                  <ion-button>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                    <p class="title-pinky-red padding">2.5K Likes</p>
+                  </ion-button>
+                </ion-buttons>
+              </ion-col>
+              <ion-col>
+                <div class="ion-text-end">
+                  <ion-buttons>
+                    <ion-button color="primary">
+                      <ion-icon name="cart"></ion-icon>
+                      <p class="title-pinky-red padding">Add to Cart</p>
+                    </ion-button>
+                  </ion-buttons>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-footer>
+      </ion-card>
+    </div>
+
+    <div *ngSwitchCase="'female'">
+      <ion-card tappable="true" class="ion-activatable rounded">
+        <img src="../assets/fshirt.jpg" />
+        <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        <ion-card-content>
+          <ion-card-subtitle>
+            <p class="small title-pinky-red">SHIRT</p>
+          </ion-card-subtitle>
+          <ion-card-title>
+            Long Sleeve Shirt
+          </ion-card-title>
+          <ion-card-subtitle>
+            <p>RM 150.00</p>
+            <ion-buttons>
+              <ion-button routerLink="/shirtdetails">
+                <!--<ion-icon name="list" outline></ion-icon>-->
+                <p class="x-small">View details...</p>
+              </ion-button>
+            </ion-buttons>
+          </ion-card-subtitle>
+        </ion-card-content>
+        <ion-footer>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-buttons>
+                  <ion-button>
+                    <ion-icon name="heart"></ion-icon>
+                    <p class="title-pinky-red padding">2.5K Likes</p>
+                  </ion-button>
+                </ion-buttons>
+              </ion-col>
+              <ion-col>
+                <div class="ion-text-end">
+                  <ion-buttons>
+                    <ion-button color="primary">
+                      <ion-icon name="cart"></ion-icon>
+                      <p class="title-pinky-red padding">Add to Cart</p>
+                    </ion-button>
+                  </ion-buttons>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-footer>
+      </ion-card>
+    </div>
+
+    <div *ngSwitchCase="'kids'">
+      <ion-card tappable="true" class="ion-activatable rounded">
+        <img src="../assets/kshirt.jpg" />
+        <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        <ion-card-content>
+          <ion-card-subtitle>
+            <p class="small title-pinky-red">SHIRT</p>
+          </ion-card-subtitle>
+          <ion-card-title>
+            Long Sleeve Shirt
+          </ion-card-title>
+          <ion-card-subtitle>
+            <p>RM 150.00</p>
+            <ion-buttons>
+              <ion-button routerLink="/shirtdetails">
+                <!--<ion-icon name="list" outline></ion-icon>-->
+                <p class="x-small">View details...</p>
+              </ion-button>
+            </ion-buttons>
+          </ion-card-subtitle>
+        </ion-card-content>
+        <ion-footer>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-buttons>
+                  <ion-button>
+                    <ion-icon name="heart"></ion-icon>
+                    <p class="title-pinky-red padding">2.5K Likes</p>
+                  </ion-button>
+                </ion-buttons>
+              </ion-col>
+              <ion-col>
+                <div class="ion-text-end">
+                  <ion-buttons>
+                    <ion-button color="primary">
+                      <ion-icon name="cart"></ion-icon>
+                      <p class="title-pinky-red padding">Add to Cart</p>
+                    </ion-button>
+                  </ion-buttons>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-footer>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

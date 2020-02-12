@@ -4,7 +4,7 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #f50587;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -74,4 +74,43 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /*fonts-family*/
+  --ion-font-family: 'Poppins', sans-serif;
+
+
+  .sc-ion-card-md-h {
+    color: #e8005f;
+    box-shadow: 0 3px 3px 3px rgba(206, 206, 206, 0.377),
+      0 2px 2px 0 rgba(206, 206, 206, 0.377),
+      0 1px 5px 0 rgba(206, 206, 206, 0.377);
+  }
+  
+  .title-pinky-red {
+    color: #f50587;
+  }
+  
+  p {
+    font-weight: bold;
+    color: black;
+    //padding-left: 10px;
+    //padding-right: 10px;
+  }
+  
+  .x-small {
+    font-size: x-small;
+  }
+  
+  .small {
+    font-size: small;
+  }
+
+  .padding{
+    padding-left:15px;
+    margin: 4px;
+  }
+
+  .ion-text-end{
+    text-align: end;
+  }
 }
