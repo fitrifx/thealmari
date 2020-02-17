@@ -1,9 +1,53 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
+<ion-header no-border>
+  <ion-toolbar mode="ios">
+    <ion-title class="title-pinky-red">
+      Feed
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+
+<ion-content>
+ <!-- <ion-grid style="height: 50%">
+  <ion-row justify-content-center align-items-center style="height: 50%">
+    
+    <img src="../assets/alert.svg" />
+    <br>
+    
+
+  </ion-row>
+  <ion-row class="center">
+    <p class="x-small">You haven't follow anyone yet...</p>
+  </ion-row>
+  </ion-grid>  -->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="center">
+        <img src="../assets/alert.svg" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="center">
+        <p>You haven't follow anyone yet...</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col color="primary" size="2">text</ion-col>
+      <ion-col color="primary" size="2">text</ion-col>
+      <ion-col color="primary" >text</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col color="primary" size="2">text</ion-col>
+      <ion-col color="primary" size="2">text</ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

@@ -1,17 +1,123 @@
 <ion-header no-border>
   <ion-toolbar mode="ios">
     <ion-buttons slot="start">
-      <ion-back-button
-        icon="md-arrow-round-back"
-        defaultHref="/tab1"
-        color="primary"
-      ></ion-back-button>
+      <ion-back-button icon="md-arrow-round-back" defaultHref="/tab1" color="primary"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon slot="icon-only" name="search" color="primary"></ion-icon>
+        <ion-icon slot="icon-only" name="heart-empty" color="primary"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title color="primary">Shirt</ion-title>
+    <ion-title color="primary">Long Sleeve Shirt</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-content>
+  <div>
+    <ion-slides [options]="slideOpts" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" pager="true">
+      <ion-slide>
+        <img src="../assets/fshirt.jpg" />
+      </ion-slide>
+      <ion-slide>
+        <img src="../assets/fshirt.jpg" />
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div>
+    <ion-row>
+      <ion-col size="3" class="center">
+        <ion-avatar class="center">
+          <img src="../assets/amir.jpg" />
+        </ion-avatar>
+        <p class="center">Amir Fitri</p>
+
+      </ion-col>
+      <ion-col>
+        <p class="padding-small margin-text">RM 150.00</p>
+        <p class="padding-small margin-text large">Long Sleeve Shirt</p>
+        <ion-text></ion-text>
+        <p class="small padding-small margin-text">
+          Published on 20 December 2020
+        </p>
+        <ion-button disabled color="secondary">
+          <p class="x-small" color="white">Free Postage</p>
+        </ion-button>
+        <br />
+        <ion-button disabled color="danger">
+          <p class="x-small" color="white">Free gift included</p>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <p>PRODUCT DETAILS</p>
+      </ion-item-divider>
+    </ion-item-group>
+  </ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2" class="center">
+        <img class="special-round" src="../assets/dot.svg"/>
+      </ion-col>
+      <ion-col class="padding-details" >
+        <p class="small margin-details">Used for just 3 days only on "Makan mana bro?" TV series</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2" class="center">
+        <img class="special-round" src="../assets/dot.svg"/>
+      </ion-col>
+      <ion-col class="padding-details" >
+        <p class="m small margin-details">Jimie selalu pakai.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2" class="center">
+        <img class="special-round" src="../assets/dot.svg"/>
+      </ion-col>
+      <ion-col class="padding-details" >
+        <p class="m small margin-details">En wan selalu pinjam</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2" class="center">
+        <img class="special-round" src="../assets/dot.svg"/>
+      </ion-col>
+      <ion-col class="padding-details" >
+        <p class="m small margin-details">Takda bau busuk pun.</p>
+      </ion-col>
+    </ion-row>
+    
+    
+  </ion-grid>
+
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <p>COMMENTS</p>
+      </ion-item-divider>
+    </ion-item-group>
+  </ion-list>
+
+ 
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title color="primary" slot="start">
+      <p>RM 150.00</p>
+    </ion-title>
+    <ion-buttons slot="end">
+      <!-- <ion-button>
+        <ion-icon slot="icon-only" name="heart" color="primary"></ion-icon>
+      </ion-button> -->
+      <ion-button fill="outline" expand="block" color="primary" shape="round">
+        ADD TO WISHLIST
+        <ion-icon name="heart" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

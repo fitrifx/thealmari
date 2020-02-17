@@ -5,7 +5,7 @@
     </ion-title>
     <ion-buttons slot="end">
       <ion-button color="primary">
-        <ion-icon slot="icon-only" name="cart"></ion-icon>
+        <ion-icon slot="icon-only" name="heart"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -14,10 +14,10 @@
 <ion-content>
   <ion-toolbar>
     <ion-buttons slot="secondary"> </ion-buttons>
-    <ion-button expand="full">Full Button</ion-button>
+    <ion-button expand="expand">Search</ion-button>
     <ion-buttons slot="primary">
       <ion-button color="primary">
-        <ion-icon slot="icon-only" name="heart-empty"></ion-icon>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -28,12 +28,7 @@
       </ion-item-divider>
     </ion-item-group>
   </ion-list>
-  <ion-slides
-    [options]="sliderConfig"
-    #slider
-    (ionSlidesDidLoad)="slidesDidLoad(slider)"
-    pager="true"
-  >
+  <ion-slides [options]="sliderConfig" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" pager="true">
     <ion-slide>
       <ion-card tappable="true" class="ion-activatable rounded">
         <img src="../assets/az.png" />
@@ -85,13 +80,13 @@
           <img src="../assets/aaron.png" />
           <ion-ripple-effect type="bounded"></ion-ripple-effect>
           <ion-card-content>
-          <ion-card-subtitle>
-            <p class="x-small title-pinky-red">DISCOVER BAJU MELAYU</p>
-            <p class="small">
-              Search for the most authentic and popular Baju Melayu for you!
-            </p>
-          </ion-card-subtitle>
-        </ion-card-content>
+            <ion-card-subtitle>
+              <p class="x-small title-pinky-red">DISCOVER BAJU MELAYU</p>
+              <p class="small">
+                Search for the most authentic and popular Baju Melayu for you!
+              </p>
+            </ion-card-subtitle>
+          </ion-card-content>
         </ion-card>
       </ion-col>
       <ion-col>
@@ -99,11 +94,11 @@
           <img src="../assets/zizan.png" />
           <ion-ripple-effect type="bounded"></ion-ripple-effect>
           <ion-card-content>
-          <ion-card-subtitle>
-            <p class="x-small title-pinky-red">DISCOVER CAP</p>
-            <p class="small">Grab pre-loved cap from your beloved Artist.</p>
-          </ion-card-subtitle>
-        </ion-card-content>
+            <ion-card-subtitle>
+              <p class="x-small title-pinky-red">DISCOVER CAP</p>
+              <p class="small">Grab pre-loved cap from your beloved Artist.</p>
+            </ion-card-subtitle>
+          </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
