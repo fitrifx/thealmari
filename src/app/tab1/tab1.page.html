@@ -8,23 +8,22 @@
         <ion-icon slot="icon-only" name="heart"></ion-icon>
       </ion-button>
     </ion-buttons>
-  </ion-toolbar>
+  </ion-toolbar><ion-searchbar tappable="true"></ion-searchbar>
 </ion-header>
 
 <ion-content>
-  <ion-toolbar>
-    <ion-buttons slot="secondary"> </ion-buttons>
-    <ion-button expand="expand">Search</ion-button>
+  
+    <!-- <ion-buttons slot="secondary"> </ion-buttons>
+    <ion-button expand="block">Search</ion-button>
     <ion-buttons slot="primary">
       <ion-button color="primary">
         <ion-icon slot="icon-only" name="search"></ion-icon>
       </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
+    </ion-buttons> -->
   <ion-list>
     <ion-item-group>
       <ion-item-divider>
-        <p>HOME</p>
+        <p class="bold">HOME</p>
       </ion-item-divider>
     </ion-item-group>
   </ion-list>
@@ -72,6 +71,7 @@
       </ion-card>
     </ion-slide>
   </ion-slides>
+  <br>
 
   <ion-grid>
     <ion-row>
@@ -81,8 +81,8 @@
           <ion-ripple-effect type="bounded"></ion-ripple-effect>
           <ion-card-content>
             <ion-card-subtitle>
-              <p class="x-small title-pinky-red">DISCOVER BAJU MELAYU</p>
-              <p class="small">
+              <p class="x-small title-pinky-red bold">DISCOVER BAJU MELAYU</p>
+              <p class="small black">
                 Search for the most authentic and popular Baju Melayu for you!
               </p>
             </ion-card-subtitle>
@@ -95,8 +95,8 @@
           <ion-ripple-effect type="bounded"></ion-ripple-effect>
           <ion-card-content>
             <ion-card-subtitle>
-              <p class="x-small title-pinky-red">DISCOVER CAP</p>
-              <p class="small">Grab pre-loved cap from your beloved Artist.</p>
+              <p class="x-small title-pinky-red bold">DISCOVER CAP</p>
+              <p class="small black">Grab pre-loved cap from your beloved Artist.</p>
             </ion-card-subtitle>
           </ion-card-content>
         </ion-card>
@@ -107,7 +107,7 @@
   <ion-list>
     <ion-item-group>
       <ion-item-divider>
-        <p>BROWSE</p>
+        <p class="bold">BROWSE</p>
       </ion-item-divider>
     </ion-item-group>
   </ion-list>

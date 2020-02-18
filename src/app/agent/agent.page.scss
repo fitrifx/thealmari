@@ -1,0 +1,46 @@
+.header{
+    //background-color: rgb(247, 199, 199);
+    background-image: url("/assets/header.svg");
+    height : 170px;
+
+    
+}
+
+.userimage{
+    height: 130px;
+    width: 130px;
+    border-radius: 12%;
+    overflow: hidden;
+}
+
+.border-white{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 15%;
+    width: fit-content;
+}
+
+.border-red{
+    border: 5px solid rgb(245, 75, 24);
+    border-radius: 15%;
+    width: fit-content;
+}
+
+.pos-image{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+   
+}
+
+.text-close-name{
+    margin: auto;
+}
+
+.text-close-level{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.padding-left{
+    padding-left: 20px;
+}

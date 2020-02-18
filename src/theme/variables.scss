@@ -152,4 +152,26 @@
     padding :2px;
     margin: auto;
   }
+
+  .searchbar-input.sc-ion-searchbar-md{
+    border-radius: 10px;
+  }
+
+  .black{
+    color: #000000;
+  }
+
+  .grey{
+    color: darkgray;
+  }
+
+  ion-avatar{
+    --border-radius:10px;
+  }
+
+  .avatar-center{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }

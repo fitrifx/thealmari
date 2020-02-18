@@ -5,49 +5,85 @@
     </ion-title>
     <ion-buttons slot="end">
       <ion-button color="primary">
-        <ion-icon slot="icon-only" ></ion-icon>
+        <ion-icon slot="icon-only"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
+  <ion-searchbar></ion-searchbar>
 </ion-header>
 
 
 <ion-content>
- <!-- <ion-grid style="height: 50%">
-  <ion-row justify-content-center align-items-center style="height: 50%">
-    
-    <img src="../assets/alert.svg" />
-    <br>
-    
+  <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="feed" checked>
+      <ion-label>Feed</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="explore">
+      <ion-label>Explore</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 
-  </ion-row>
-  <ion-row class="center">
-    <p class="x-small">You haven't follow anyone yet...</p>
-  </ion-row>
-  </ion-grid>  -->
 
-  <ion-grid>
-    <ion-row>
-      <ion-col class="center">
-        <img src="../assets/alert.svg" />
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col class="center">
-        <p>You haven't follow anyone yet...</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <ion-grid>
-    <ion-row>
+
+
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'feed'">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="center">
+            <lottie-player autoplay loop src="../assets/empty.json">
+            </lottie-player>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="center">
+            <p>You haven't follow anyone yet...</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+
+    <div *ngSwitchCase="'explore'">
+      <ion-list>
+        <ion-item-group>
+          <ion-item-divider>
+            <p class="bold">EXPLORE</p>
+          </ion-item-divider>
+        </ion-item-group>
+      </ion-list>
+      <ion-grid>
+        <!-- <ion-row>
       <ion-col color="primary" size="2">text</ion-col>
       <ion-col color="primary" size="2">text</ion-col>
-      <ion-col color="primary" >text</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col color="primary" size="2">text</ion-col>
-      <ion-col color="primary" size="2">text</ion-col>
-    </ion-row>
-  </ion-grid>
-  
+      <ion-col color="primary">text</ion-col>
+    </ion-row> -->
+        <ion-row>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg"  routerLink="/agent"/></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
 </ion-content>

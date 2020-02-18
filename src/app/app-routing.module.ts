@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'shirtdetails',
     loadChildren: () => import('./shirtdetails/shirtdetails.module').then( m => m.ShirtdetailsPageModule)
+  },
+  {
+    path: 'agent',
+    loadChildren: () => import('./agent/agent.module').then( m => m.AgentPageModule)
   }
 ];
 @NgModule({
