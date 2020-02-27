@@ -21,6 +21,18 @@ const routes: Routes = [
   {
     path: 'agent',
     loadChildren: () => import('./agent/agent.module').then( m => m.AgentPageModule)
+  },
+  {
+    path: 'hometwo',
+    loadChildren: () => import('./hometwo/hometwo.module').then( m => m.HometwoPageModule)
+  },
+  {
+    path: 'combo',
+    loadChildren: () => import('./combo/combo.module').then( m => m.ComboPageModule)
+  },
+  {
+    path: 'category',
+    loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
   }
 ];
 @NgModule({

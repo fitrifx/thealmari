@@ -16,6 +16,12 @@ export class ShirtdetailsPage implements OnInit {
     pager : true
   };
 
+  slideOptsTwo = {
+    initialSlide : 0,
+    leftSlide : true,
+    slidesPerView : 3.2
+    }
+
   slidesDidLoad(slides: IonSlides) {
     slides.startAutoplay();
   }

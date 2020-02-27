@@ -97,10 +97,61 @@
   <ion-list>
     <ion-item-group>
       <ion-item-divider>
-        <p>COMMENTS</p>
+        <p>COMPLETE YOUR ATTIRE</p>
       </ion-item-divider>
     </ion-item-group>
   </ion-list>
+
+  <div>
+    <ion-slides [options]="slideOptsTwo">
+      <ion-slide>
+        <ion-card tappable="true" class="ion-activatable cardSize" routerLink="/shirt">
+          <img src="../assets/aaron.png">
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          <ion-card-content>
+            <ion-card-subtitle>
+              <p class="small title-pinky-red bold">BAJU MELAYU</p>
+
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card tappable="true" class="ion-activatable">
+          <img src="../assets/zizan.png" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          <ion-card-content>
+            <ion-card-subtitle>
+              <p class="small title-pinky-red bold">CAP</p>
+
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card tappable="true" class="ion-activatable" routerLink="/shirt">
+          <img src="../assets/aaron.png" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          <ion-card-content>
+            <ion-card-subtitle>
+              <p class="small title-pinky-red bold">SKIRT</p>
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card tappable="true" class="ion-activatable" routerLink="/shirt">
+          <img src="../assets/aaron.png" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          <ion-card-content>
+            <ion-card-subtitle>
+              <p class="small title-pinky-red bold">SHOES</p>
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
 
  
 </ion-content>

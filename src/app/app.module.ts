@@ -9,11 +9,12 @@ import { IonicHeaderParallaxModule } from 'ionic-header-parallax'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicHeaderParallaxModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicHeaderParallaxModule,HttpClientModule],
   providers: [
     StatusBar,
     SplashScreen,

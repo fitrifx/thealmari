@@ -1,0 +1,37 @@
+.rounded{
+    border-radius : 100%;
+    background-color: rgba(255, 236, 250, 0.719);
+}
+
+.imageSize{
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+
+.paddingImage{
+    padding :10px;
+}
+
+.size{
+    width: 600px;
+    height :60px;
+    padding-top : 10px
+}
+
+.noMargin{   
+    margin: auto;
+}
+
+.container{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.round{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffe2e2;
+}
+

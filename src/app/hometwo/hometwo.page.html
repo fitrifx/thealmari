@@ -1,0 +1,213 @@
+<ion-header no-border>
+  <ion-toolbar mode="ios">
+    <ion-title class="title-pinky-red">
+      the Aura
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  
+  <div>
+    <ion-slides
+      [options]="slideOpts"
+      #slider
+      (ionSlidesDidLoad)="slidesDidLoad(slider)"
+    >
+      <ion-slide>
+        <ion-card tappable="true">
+          <img src="../assets/p1.png" />
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="../assets/p2.png" />
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="../assets/p3.png" />
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+<br>
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <p class="bold ">CATEGORIES</p>
+      </ion-item-divider>
+    </ion-item-group>
+  </ion-list>
+
+  <div>
+    <ion-slides [options]="roundSlide" tappable="true">
+      <ion-slide>
+        <ion-col routerLink="/category">
+          <ion-avatar class="center ion-activatable ">
+            <img src="../assets/skirt.svg" />
+            <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          </ion-avatar>
+          <p class="center small">Skirt</p>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col >
+          <ion-avatar class="center ion-activatable ">
+            <img src="../assets/trousers.svg" />
+            <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          </ion-avatar>
+          <p class="center small">Trousers</p>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col >
+          <ion-avatar class="center ion-activatable ">
+            <img src="../assets/shirt.svg" />
+            <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          </ion-avatar>
+          <p class="center small">Shirt</p>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col >
+          <ion-avatar class="center ion-activatable ">
+            <img src="../assets/shoe.svg" />
+            <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          </ion-avatar>
+          <p class="center small">Shoes</p>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col >
+          <ion-avatar class="center ion-activatable ">
+            <img src="../assets/glasses.svg" />
+            <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          </ion-avatar>
+          <p class="center small">Glasses</p>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col >
+          <ion-avatar class="center ion-activatable ">
+            <img src="../assets/bag.svg" />
+            <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          </ion-avatar>
+          <p class="center small">Bags</p>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <br>
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <p class="bold ">DISCOVER</p>
+      </ion-item-divider>
+    </ion-item-group>
+  </ion-list>
+  <div>
+    <ion-slides [options]="slideOptsTwo">
+      <ion-slide>
+        <ion-card
+          tappable="true"
+          class="ion-activatable border-radius"
+          routerLink="/shirt"
+        >
+          <img src="../assets/aaron.png" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          <ion-card-content>
+            <ion-card-subtitle>
+              <p class="small title-pinky-red bold">BAJU MELAYU</p>
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card tappable="true" class="ion-activatable border-radius">
+          <img src="../assets/dinner.png" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          <ion-card-content>
+            <ion-card-subtitle>
+              <p class="small title-pinky-red bold">DINNER</p>
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card tappable="true" class="ion-activatable border-radius" routerLink="/shirt">
+          <img src="../assets/bajukurung.png" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          <ion-card-content>
+            <ion-card-subtitle>
+              <p class="small title-pinky-red bold">BAJU KURUNG</p>
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card tappable="true" class="ion-activatable border-radius" routerLink="/shirt">
+          <img src="../assets/malaywed.png" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+          <ion-card-content>
+            <ion-card-subtitle>
+              <p class="small title-pinky-red bold">WEDDING</p>
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      
+    </ion-slides>
+  </div>
+<br>
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <p class="bold">BROWSE</p>
+      </ion-item-divider>
+    </ion-item-group>
+  </ion-list>
+
+  <div>
+    <p class="title-pinky-red padding">HEAD</p>
+  </div>
+  <div class="ion-activatable">
+    <ion-card tappable="true" class="border-radius">
+      <img src="../assets/scarf.jpg" />
+      <ion-ripple-effect type="bounded"></ion-ripple-effect>
+    </ion-card>
+  </div>
+  <div>
+    <p class="title-pinky-red padding">UPPER BODY</p>
+  </div>
+  <div class="ion-activatable">
+    <ion-card tappable="true" class="border-radius">
+      <img src="../assets/man.jpg" />
+      <ion-ripple-effect type="bounded"></ion-ripple-effect>
+    </ion-card>
+  </div>
+  <div>
+    <p class="title-pinky-red padding">LOWER BODY</p>
+  </div>
+  <div class="ion-activatable">
+    <ion-card tappable="true" class="border-radius">
+      <img src="../assets/trouser.jpeg" />
+      <ion-ripple-effect type="bounded"></ion-ripple-effect>
+    </ion-card>
+  </div>
+  <div>
+    <p class="title-pinky-red padding">LEG</p>
+  </div>
+  <div class="ion-activatable">
+    <ion-card tappable="true" class="border-radius">
+      <img src="../assets/shoe.jpg" />
+      <ion-ripple-effect type="bounded"></ion-ripple-effect>
+    </ion-card>
+  </div>
+</ion-content>

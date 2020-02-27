@@ -1,0 +1,63 @@
+<ion-header no-border>
+  <ion-toolbar mode="ios">
+    <ion-title class="title-pinky-red">
+      Combo
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-slides [options]="roundSlide" tappable="true">
+    <ion-slide>
+      <ion-col>
+        <ion-avatar class="center ion-activatable ">
+          <img src="../assets/skirt.svg" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        </ion-avatar>
+        <p class="center small">Skirt</p>
+      </ion-col>
+    </ion-slide>
+    <ion-slide>
+      <ion-col >
+        <ion-avatar class="center ion-activatable ">
+          <img src="../assets/trousers.svg" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        </ion-avatar>
+        <p class="center small">Trousers</p>
+      </ion-col>
+    </ion-slide>
+    <ion-slide>
+      <ion-col >
+        <ion-avatar class="center ion-activatable ">
+          <img src="../assets/shirt.svg" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        </ion-avatar>
+        <p class="center small">Shirt</p>
+      </ion-col>
+    </ion-slide>
+    <ion-slide>
+      <ion-col >
+        <ion-avatar class="center ion-activatable ">
+          <img src="../assets/shoe.svg" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        </ion-avatar>
+        <p class="center small">Shoes</p>
+      </ion-col>
+    </ion-slide>
+    <ion-slide>
+      <ion-col >
+        <ion-avatar class="center ion-activatable ">
+          <img src="../assets/glasses.svg" />
+          <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        </ion-avatar>
+        <p class="center small">Glasses</p>
+      </ion-col>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

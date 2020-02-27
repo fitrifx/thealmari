@@ -8,13 +8,19 @@ import { AgentPageRoutingModule } from './agent-routing.module';
 
 import { AgentPage } from './agent.page';
 
+//import { RatingComponent } from '../../app/rating/rating.component';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AgentPageRoutingModule
+    AgentPageRoutingModule,
+
+    
   ],
-  declarations: [AgentPage]
+  declarations: [AgentPage, ],
+  entryComponents :[]
+  
 })
 export class AgentPageModule {}
