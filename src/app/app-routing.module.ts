@@ -15,10 +15,6 @@ const routes: Routes = [
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
   {
-    path: 'shirtdetails',
-    loadChildren: () => import('./shirtdetails/shirtdetails.module').then( m => m.ShirtdetailsPageModule)
-  },
-  {
     path: 'agent',
     loadChildren: () => import('./agent/agent.module').then( m => m.AgentPageModule)
   },
@@ -33,6 +29,14 @@ const routes: Routes = [
   {
     path: 'category',
     loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
+  },
+  {
+    path: 'categorydetails',
+    loadChildren: () => import('./categorydetails/categorydetails.module').then( m => m.CategorydetailsPageModule)
+  },
+  {
+    path: 'wishlist',
+    loadChildren: () => import('./wishlist/wishlist.module').then( m => m.WishlistPageModule)
   }
 ];
 @NgModule({

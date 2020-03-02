@@ -8,7 +8,7 @@
     </ion-title>
     <ion-buttons slot="end">
       <ion-button color="primary">
-        <ion-icon slot="icon-only"  ></ion-icon>
+        <ion-icon slot="icon-only"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -16,11 +16,25 @@
 
 <ion-content>
   <img src="../assets/skirt.png" />
-    <div class="collection ion-padding">
-      <div class="collection-item" text-center *ngFor="let img of images" routerLink="/shirtdetails">
-        <img [src] = "img.imagem"/>
-        <p>{{img.nome}}</p>
-        <p class="small">{{img.price}}</p>
-      </div>
+  <div class="collection ion-padding">
+    <div class="collection-item" *ngFor="let img of images" routerLink="/categorydetails">
+      <img [src]="img.imagem" />
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="bold margin-details ">{{img.nome}}</p>
+            <p class="small margin-text ">{{img.price}}</p>
+          </ion-col>
+          <ion-col size="4" class="align-right ">
+            <ion-badge color="primary"  mode="ios">5.5
+                <ion-icon name="heart" color="light">
+                </ion-icon>
+              </ion-badge>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
     </div>
+  </div>
 </ion-content>

@@ -1,9 +1,9 @@
-<ion-header no-border>
+<ion-header no-border #header>
   <ion-toolbar mode="ios">
     <ion-title class="title-pinky-red">
       the Aura
     </ion-title>
-    <ion-buttons slot="end">
+    <ion-buttons slot="end" routerLink="/wishlist">
       <ion-button color="primary">
         <ion-icon slot="icon-only" name="heart"></ion-icon>
       </ion-button>
@@ -11,7 +11,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [scrollEvents]="true" appHideheader [header]="header">
   <br>
   
   <div>

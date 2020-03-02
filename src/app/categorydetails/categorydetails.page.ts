@@ -3,12 +3,17 @@ import { IonSlides } from '@ionic/angular';
 
 
 @Component({
-  selector: 'app-shirtdetails',
-  templateUrl: './shirtdetails.page.html',
-  styleUrls: ['./shirtdetails.page.scss'],
+  selector: 'app-categorydetails',
+  templateUrl: './categorydetails.page.html',
+  styleUrls: ['./categorydetails.page.scss'],
 })
-export class ShirtdetailsPage implements OnInit {
+export class CategorydetailsPage implements OnInit {
 
+  constructor() { }
+
+  ngOnInit() {
+  }
+ 
   slideOpts = {
     initialSlide: 0,
     speed: 300,
@@ -26,9 +31,5 @@ export class ShirtdetailsPage implements OnInit {
     slides.startAutoplay();
   }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

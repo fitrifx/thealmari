@@ -9,7 +9,8 @@ import { IonicHeaderParallaxModule } from 'ionic-header-parallax'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+//import { HideheaderDirective } from './directives/hideheader.directive'
 
 @NgModule({
   declarations: [AppComponent],
