@@ -1,4 +1,4 @@
-<ion-header no-border>
+<ion-header no-border #header>
   <ion-toolbar mode="ios">
     <ion-title class="title-pinky-red">
       Feed
@@ -9,42 +9,145 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  <ion-searchbar></ion-searchbar>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="segment">
+      <ion-segment-button value="feed" checked>
+        <ion-label>Feed</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="explore">
+        <ion-label>Explore</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
 
-<ion-content>
-  <ion-segment [(ngModel)]="segment">
-    <ion-segment-button value="feed" checked>
-      <ion-label>Feed</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="explore">
-      <ion-label>Explore</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+<ion-content [scrollEvents]="true" appHideheader [header]="header">
+
 
 
 
 
   <div [ngSwitch]="segment">
     <div *ngSwitchCase="'feed'">
+
+
+      <!-- <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col size=2>
+              <ion-avatar>
+                <img src="../assets/dot.svg">
+              </ion-avatar>
+            </ion-col>
+            <ion-col>
+              Nama
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div> -->
+
+      <ion-card class="insta">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../assets/user.svg">
+          </ion-avatar>
+          <p class="padding">Amir Fitri</p>
+          <div class="right">
+            <ion-badge color="warning" mode="ios">Verified</ion-badge>
+          </div>
+        </ion-item>
+        <div class="image">
+          <img src="../assets/shoes.jpg">
+          <div class="icon-above">
+            <ion-buttons slot="end">
+              <ion-button>
+                <ion-icon slot="icon-only" name="happy" color="light"></ion-icon>
+              </ion-button>
+              <ion-button>
+                <ion-icon slot="icon-only" name="exit" color="light"></ion-icon>
+              </ion-button>
+              <ion-button>
+                <ion-icon name="heart-empty" color="light"></ion-icon>
+                <ion-badge color="primary" mode="ios">5.5k
+                </ion-badge>
+              </ion-button>
+            </ion-buttons>
+          </div>
+        </div>
+        <div class="padding">
+          <p class="larger">#228 Puma Shoes</p>
+        </div>
+      </ion-card>
+      <ion-card class="insta">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../assets/user.svg">
+          </ion-avatar>
+          <p class="padding">Nurul Hazimi</p>
+        </ion-item>
+        <img src="../assets/skirt1.jpg">
+        <ion-card-content>
+          <p class="small">Jauh Dimata Skirt #1124</p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="heart"></ion-icon>
+              <div>12 Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comments</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <ion-card class="insta">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../assets/user.svg">
+          </ion-avatar>
+          <p class="padding">Ahmad Muhaimin</p>
+        </ion-item>
+        <img src="../assets/skirt4.jpg">
+        <p>Apa khabar dinda Skirt</p>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="heart"></ion-icon>
+              <div>12 Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comments</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+    </div>
+
+
+    <div *ngSwitchCase="'explore'">
+      <ion-searchbar></ion-searchbar>
       <ion-grid>
         <ion-row>
-          <ion-col class="center">
+          <ion-col class="center col">
             <lottie-player autoplay loop src="../assets/empty.json">
             </lottie-player>
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col class="center">
+          <ion-col class="center col">
             <p>You haven't follow anyone yet...</p>
           </ion-col>
         </ion-row>
       </ion-grid>
-    </div>
-
-
-    <div *ngSwitchCase="'explore'">
       <ion-list>
         <ion-item-group>
           <ion-item-divider>
@@ -59,7 +162,7 @@
       <ion-col color="primary">text</ion-col>
     </ion-row> -->
         <ion-row>
-          <ion-col color="primary" class="center"><img src="../assets/alert.svg"  routerLink="/agent"/></ion-col>
+          <ion-col color="primary" class="center"><img src="../assets/alert.svg" routerLink="/agent" /></ion-col>
           <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
           <ion-col color="primary" class="center"><img src="../assets/alert.svg" /></ion-col>
         </ion-row>

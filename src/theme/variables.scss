@@ -111,6 +111,9 @@
   .large {
     font-size: large;
   }
+  .larger{
+    font-size: larger;;
+  }
 
   .padding{
     padding-left:15px;
@@ -179,3 +182,7 @@
     text-align: right;
   }
 }
+
+:focus {
+  outline: none;
+  }

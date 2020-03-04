@@ -1,7 +1,11 @@
 <ion-header no-border>
   <ion-toolbar mode="ios">
     <ion-buttons slot="start">
-      <ion-back-button icon="md-arrow-round-back" defaultHref="/tab2" color="primary"></ion-back-button>
+      <ion-back-button
+        icon="md-arrow-round-back"
+        defaultHref="/tab2"
+        color="primary"
+      ></ion-back-button>
     </ion-buttons>
 
     <ion-title color="primary">Haji Mahmud</ion-title>
@@ -9,21 +13,14 @@
 </ion-header>
 
 <ion-content>
-  <div class="header">
-
-  </div>
+  <div class="header"></div>
   <div class="pos-image">
     <div class="border-white">
       <div class="userimage">
-        <img src="../assets/user.jpg">
+        <img src="../assets/user.jpg" />
       </div>
     </div>
   </div>
-
-
-
-
-
 
   <ion-grid>
     <ion-row>
@@ -42,7 +39,6 @@
         <!-- <ion-button disabled  color="warning" size="small">
           <p>Verified</p>
         </ion-button> -->
-
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -54,7 +50,7 @@
     </ion-item-group>
   </ion-list>
 
-  <ion-segment >
+  <ion-segment>
     <ion-segment-button value="feed" checked>
       <ion-label>For Sell</ion-label>
     </ion-segment-button>
@@ -62,9 +58,4 @@
       <ion-label>Sold</ion-label>
     </ion-segment-button>
   </ion-segment>
-
-  
-  
- 
-
 </ion-content>

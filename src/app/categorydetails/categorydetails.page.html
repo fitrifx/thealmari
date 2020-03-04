@@ -1,5 +1,5 @@
 <ion-header no-border #header>
-  <ion-toolbar mode="ios">
+  <ion-toolbar mode="ios" [class.show-background]="showToolbar">
     <ion-buttons slot="start">
       <ion-back-button icon="md-arrow-round-back" defaultHref="/tab1" color="primary"></ion-back-button>
     </ion-buttons>
@@ -12,7 +12,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [scrollEvents]="true" appHideheader [header]="header">
+<ion-content [scrollEvents]="true" appHideheader [header]="header" >
   <div>
     <ion-slides [options]="slideOpts" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" pager="true">
       <ion-slide>
@@ -22,6 +22,7 @@
         <img src="../assets/skirt4.jpg" />
       </ion-slide>
     </ion-slides>
+    
   </div>
   <div>
     <ion-row>
@@ -166,8 +167,8 @@
         <ion-icon slot="icon-only" name="heart" color="primary"></ion-icon>
       </ion-button> -->
       <ion-button fill="outline" expand="block" color="primary" shape="round">
+        <ion-icon name="add" color="primary"></ion-icon>
         ADD TO WISHLIST
-        <ion-icon name="heart" color="primary"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
