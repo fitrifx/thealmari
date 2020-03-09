@@ -39,8 +39,12 @@ const routes: Routes = [
     loadChildren: () => import('./wishlist/wishlist.module').then( m => m.WishlistPageModule)
   },
   {
-    path: 'head',
-    loadChildren: () => import('./head/head.module').then( m => m.HeadPageModule)
+    path: 'all-category',
+    loadChildren: () => import('./all-category/all-category.module').then( m => m.AllCategoryPageModule)
+  },
+  {
+    path: 'head-cat',
+    loadChildren: () => import('./head-cat/head-cat.module').then( m => m.HeadCatPageModule)
   }
 ];
 @NgModule({

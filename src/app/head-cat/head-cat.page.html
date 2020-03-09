@@ -1,0 +1,105 @@
+<ion-header no-border #header>
+  <ion-toolbar mode="ios" [class.show-background]="showToolbar">
+    <ion-buttons slot="start">
+      <ion-back-button icon="md-arrow-round-back" defaultHref="/tab1" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="heart-empty" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="primary">Head Accessories</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [scrollEvents]="true" appHideheader [header]="header">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="box ion-activatable" routerLink="/category">
+        <img src="../assets/scarf.jpg" class="rounded img-opac" />
+        <div class="text">
+          <p class="bold larger">Scarf</p>
+        </div>
+        <ion-ripple-effect type="bounded"></ion-ripple-effect>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col class="box">
+        <img src="../assets/shades.jpg" class="rounded img-opac" />
+        <div class="text">
+          <p class="bold larger">Shades</p>
+        </div>
+      </ion-col>
+      <ion-col class="box">
+        <img src="../assets/caps.jpg" class="rounded img-opac" />
+        <div class="text">
+          <p class="bold larger">Caps</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div>
+    <p class="padding bold">Random picks</p>
+  </div>
+
+  <div class="box" padding>
+    <ion-row>
+      <ion-col>
+        <img src="../assets/shades.jpg" class="rounded" />
+        <p class="bold margin-details ">Shades</p>
+        <p class="small margin-text ">Rm. 120.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../assets/scarf.jpg" class="rounded" />
+        <p class="bold margin-details ">Scarf</p>
+        <p class="small margin-text ">Rm. 120.00</p>
+      </ion-col>
+    </ion-row>
+    <div class="add">
+      <ion-icon name="add-circle" size="large"></ion-icon>
+
+    </div>
+  </div>
+  <div class="box" padding>
+    <ion-row>
+      <ion-col>
+        <img src="../assets/shades.jpg" class="rounded" />
+        <p class="bold margin-details ">Shades</p>
+        <p class="small margin-text ">Rm. 120.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../assets/scarf.jpg" class="rounded" />
+        <p class="bold margin-details ">Scarf</p>
+        <p class="small margin-text ">Rm. 120.00</p>
+      </ion-col>
+    </ion-row>
+    <div class="add">
+      <ion-icon name="add-circle" size="large"></ion-icon>
+
+    </div>
+  </div>
+
+  <div class="box" padding>
+    <ion-row>
+      <ion-col>
+        <img src="../assets/shades.jpg" class="rounded" />
+        <p class="bold margin-details ">Shades</p>
+        <p class="small margin-text ">Rm. 120.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../assets/scarf.jpg" class="rounded" />
+        <p class="bold margin-details ">Scarf</p>
+        <p class="small margin-text ">Rm. 120.00</p>
+      </ion-col>
+    </ion-row>
+    <div class="add">
+      <ion-icon name="add-circle" size="large"></ion-icon>
+
+    </div>
+  </div>
+
+
+</ion-content>

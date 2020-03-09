@@ -1,0 +1,26 @@
+.rounded{
+    border-radius:10px
+}
+
+.box{
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    
+}
+
+.img-opac {
+    opacity: 0.7;
+}
+
+.add{
+    position: absolute;
+    top : 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

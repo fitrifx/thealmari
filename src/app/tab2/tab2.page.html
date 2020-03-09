@@ -10,7 +10,7 @@
     </ion-buttons>
   </ion-toolbar>
   <ion-toolbar>
-    <ion-segment [(ngModel)]="segment">
+    <ion-segment [(ngModel)]="segment" (ionChange)="segmentChanged($event)" scrollable="true">
       <ion-segment-button value="feed" checked>
         <ion-label>Feed</ion-label>
       </ion-segment-button>
@@ -52,7 +52,7 @@
           <ion-avatar item-start>
             <img src="../assets/user.svg">
           </ion-avatar>
-          <p class="padding">Amir Fitri</p>
+          <p class="padding">Hazimi Muhamad</p>
           <div class="right">
             <ion-badge color="warning" mode="ios">Verified</ion-badge>
           </div>
@@ -60,76 +60,118 @@
         <div class="image">
           <img src="../assets/shoes.jpg">
           <div class="icon-above">
-            <ion-buttons slot="end">
-              <ion-button>
-                <ion-icon slot="icon-only" name="happy" color="light"></ion-icon>
-              </ion-button>
-              <ion-button>
-                <ion-icon slot="icon-only" name="exit" color="light"></ion-icon>
-              </ion-button>
-              <ion-button>
+            <ion-buttons>
+              <ion-button shape="round" >
                 <ion-icon name="heart-empty" color="light"></ion-icon>
                 <ion-badge color="primary" mode="ios">5.5k
+                </ion-badge>
+              </ion-button>
+              <ion-button shape="round" (click)="toastOnce()">
+                <ion-icon name="add" color="light"></ion-icon>
+                <ion-badge color="primary" mode="ios">2k
                 </ion-badge>
               </ion-button>
             </ion-buttons>
           </div>
         </div>
-        <div class="padding">
-          <p class="larger">#228 Puma Shoes</p>
+        <div>
+          <ion-row>
+            <ion-col>
+              <p class="larger bold padding-left">RM 220.00</p>
+              <p class="bold padding-left dark">Pre-Loved Shoes</p>
+            </ion-col>
+            <ion-col class="center-right">
+              <ion-button shape="round" fill="clear" class="opac" routerLink="/categorydetails">
+                <ion-icon slot="end" name="exit"></ion-icon>View Item
+              </ion-button>
+            </ion-col>
+          </ion-row>
         </div>
       </ion-card>
+
       <ion-card class="insta">
         <ion-item>
           <ion-avatar item-start>
             <img src="../assets/user.svg">
           </ion-avatar>
-          <p class="padding">Nurul Hazimi</p>
+          <p class="padding">Hazimi Muhamad</p>
+          <div class="right">
+            <ion-badge color="warning" mode="ios">Verified</ion-badge>
+          </div>
         </ion-item>
-        <img src="../assets/skirt1.jpg">
-        <ion-card-content>
-          <p class="small">Jauh Dimata Skirt #1124</p>
-        </ion-card-content>
-        <ion-row>
-          <ion-col>
-            <button ion-button icon-start clear small>
-              <ion-icon name="heart"></ion-icon>
-              <div>12 Likes</div>
-            </button>
-          </ion-col>
-          <ion-col>
-            <button ion-button icon-start clear small>
-              <ion-icon name="text"></ion-icon>
-              <div>4 Comments</div>
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-card>
-      <ion-card class="insta">
-        <ion-item>
-          <ion-avatar item-start>
-            <img src="../assets/user.svg">
-          </ion-avatar>
-          <p class="padding">Ahmad Muhaimin</p>
-        </ion-item>
-        <img src="../assets/skirt4.jpg">
-        <p>Apa khabar dinda Skirt</p>
-        <ion-row>
-          <ion-col>
-            <button ion-button icon-start clear small>
-              <ion-icon name="heart"></ion-icon>
-              <div>12 Likes</div>
-            </button>
-          </ion-col>
-          <ion-col>
-            <button ion-button icon-start clear small>
-              <ion-icon name="text"></ion-icon>
-              <div>4 Comments</div>
-            </button>
-          </ion-col>
-        </ion-row>
+        <div class="image">
+          <img src="../assets/skirt4.jpg">
+          <div class="icon-above">
+            <ion-buttons>
+              <ion-button shape="round">
+                <ion-icon name="heart-empty" color="light"></ion-icon>
+                <ion-badge color="primary" mode="ios">5.5k
+                </ion-badge>
+              </ion-button>
+              <ion-button shape="round" (click)="toastOnce()">
+                <ion-icon name="add" color="light"></ion-icon>
+                <ion-badge color="primary" mode="ios">2k
+                </ion-badge>
+              </ion-button>
+            </ion-buttons>
+          </div>
+        </div>
+        <div>
+          <ion-row>
+            <ion-col>
+              <p class="larger bold padding-left">RM 220.00</p>
+              <p class="bold padding-left dark">Pre-Loved Skirt</p>
+            </ion-col>
+            <ion-col class="center-right">
+              <ion-button shape="round" fill="clear" class="opac" routerLink="/categorydetails">
+                <ion-icon slot="end" name="exit"></ion-icon>View Item
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </div>
       </ion-card>
 
+        <ion-card class="insta">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../assets/user.svg">
+          </ion-avatar>
+          <p class="padding">Hazimi Muhamad</p>
+          <div class="right">
+            <ion-badge color="warning" mode="ios">Verified</ion-badge>
+          </div>
+        </ion-item>
+        <div class="image">
+          <img src="../assets/skirt3.jpg">
+          <div class="icon-above">
+            <ion-buttons>
+              <ion-button shape="round">
+                <ion-icon name="heart-empty" color="light"></ion-icon>
+                <ion-badge color="primary" mode="ios">5.5k
+                </ion-badge>
+              </ion-button>
+              <ion-button shape="round" (click)="toastOnce()">
+                <ion-icon name="add" color="light"></ion-icon>
+                <ion-badge color="primary" mode="ios">2k
+                </ion-badge>
+              </ion-button>
+            </ion-buttons>
+          </div>
+        </div>
+        <div>
+          <ion-row>
+            <ion-col>
+              <p class="larger bold padding-left">RM 220.00</p>
+              <p class="bold padding-left dark">Pre-Loved Skirt</p>
+            </ion-col>
+            <ion-col class="center-right">
+              <ion-button shape="round" fill="clear" class="opac" routerLink="/categorydetails">
+                <ion-icon slot="end" name="exit"></ion-icon>View Item
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-card>
     </div>
 
 

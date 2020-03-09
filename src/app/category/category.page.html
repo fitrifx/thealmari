@@ -4,7 +4,7 @@
       <ion-back-button icon="md-arrow-round-back" defaultHref="/tab1" color="primary"></ion-back-button>
     </ion-buttons>
     <ion-title class="title-pinky-red">
-      Skirt
+      SKIRT
     </ion-title>
     <ion-buttons slot="end">
       <ion-button color="primary">
@@ -16,8 +16,29 @@
 
 <ion-content [scrollEvents]="true" appHideheader [header]="header">
   <img src="../assets/skirt.png" />
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <p>FILTER</p>
+      </ion-item-divider>
+    </ion-item-group>
+  </ion-list>
+
+  <div class="padding">
+    <ion-buttons>
+      <ion-button  fill="clear" shape="round" color="primary" >
+        <p>ALL</p>
+      </ion-button>
+      <ion-button fill="clear" shape="round" color="primary" >
+        <p>WOMEN</p>
+      </ion-button>
+      <ion-button  fill="clear" shape="round" color="primary">
+        <p>KIDS</p>
+      </ion-button>
+    </ion-buttons>
+  </div>
   <div class="collection ion-padding">
-    <div class="collection-item" *ngFor="let img of images" >
+    <div class="collection-item" *ngFor="let img of images">
       <div class="dot-above">
         <ion-buttons slot="end">
           <ion-button>
@@ -25,7 +46,7 @@
           </ion-button>
         </ion-buttons>
       </div>
-      <img [src]="img.imagem" routerLink="/categorydetails"  />
+      <img [src]="img.imagem" routerLink="/categorydetails" />
       <ion-grid>
         <ion-row>
           <ion-col>

@@ -12,7 +12,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [scrollEvents]="true" appHideheader [header]="header" >
+<ion-content [scrollEvents]="true" appHideheader [header]="header">
   <div>
     <ion-slides [options]="slideOpts" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" pager="true">
       <ion-slide>
@@ -22,7 +22,7 @@
         <img src="../assets/skirt4.jpg" />
       </ion-slide>
     </ion-slides>
-    
+
   </div>
   <div>
     <ion-row>
@@ -61,39 +61,61 @@
   <ion-grid>
     <ion-row>
       <ion-col size="2" class="center">
-        <img class="special-round" src="../assets/dot.svg"/>
+        <img class="special-round" src="../assets/dot.svg" />
       </ion-col>
-      <ion-col class="padding-details" >
+      <ion-col class="padding-details">
         <p class="small margin-details">Used for just 3 days only on "Makan mana bro?" TV series</p>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="2" class="center">
-        <img class="special-round" src="../assets/dot.svg"/>
+        <img class="special-round" src="../assets/dot.svg" />
       </ion-col>
-      <ion-col class="padding-details" >
+      <ion-col class="padding-details">
         <p class="m small margin-details">Jimie selalu pakai.</p>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="2" class="center">
-        <img class="special-round" src="../assets/dot.svg"/>
+        <img class="special-round" src="../assets/dot.svg" />
       </ion-col>
-      <ion-col class="padding-details" >
+      <ion-col class="padding-details">
         <p class="m small margin-details">En wan selalu pinjam</p>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="2" class="center">
-        <img class="special-round" src="../assets/dot.svg"/>
+        <img class="special-round" src="../assets/dot.svg" />
       </ion-col>
-      <ion-col class="padding-details" >
+      <ion-col class="padding-details">
         <p class="m small margin-details">Takda bau busuk pun.</p>
       </ion-col>
     </ion-row>
-    
-    
+
+
   </ion-grid>
+
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <p>TAGS</p>
+      </ion-item-divider>
+    </ion-item-group>
+  </ion-list>
+
+  <div class="padding">
+    <ion-buttons>
+      <ion-button  fill="clear" shape="round" color="primary" >
+        <p>SKIRTS</p>
+      </ion-button>
+      <ion-button fill="clear" shape="round" color="primary" >
+        <p>WOMEN</p>
+      </ion-button>
+      <ion-button  fill="clear" shape="round" color="primary">
+        <p>KIDS</p>
+      </ion-button>
+    </ion-buttons>
+  </div>
 
   <ion-list>
     <ion-item-group>
@@ -154,10 +176,10 @@
     </ion-slides>
   </div>
 
- 
+
 </ion-content>
 
-<ion-footer >
+<ion-footer>
   <ion-toolbar>
     <ion-title color="primary" slot="start">
       <p class="bold">RM 150.00</p>

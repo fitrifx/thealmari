@@ -1,7 +1,7 @@
 <ion-header no-border #header>
   <ion-toolbar mode="ios">
     <ion-title class="title-pinky-red">
-     Closets
+      Closets
     </ion-title>
     <ion-buttons slot="end" routerLink="/wishlist">
       <ion-button color="primary">
@@ -13,13 +13,9 @@
 
 <ion-content [scrollEvents]="true" appHideheader [header]="header">
   <br>
-  
+
   <div>
-    <ion-slides
-      [options]="slideOpts"
-      #slider
-      (ionSlidesDidLoad)="slidesDidLoad(slider)"
-    >
+    <ion-slides [options]="slideOpts" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)">
       <ion-slide>
         <ion-card tappable="true" class="border-radius">
           <img src="../assets/p1.png" />
@@ -37,11 +33,14 @@
       </ion-slide>
     </ion-slides>
   </div>
-<br>
+  <br>
   <ion-list>
     <ion-item-group>
-      <ion-item-divider>
-        <p class="bold ">CATEGORIES</p>
+      <ion-item-divider class="align-items">
+        <p class="bold margin-bottom ">CATEGORIES</p>
+        <ion-button fill="clear" shape="round" class="padding-right" routerLink="/all-category">
+          See all
+        </ion-button>
       </ion-item-divider>
     </ion-item-group>
   </ion-list>
@@ -58,7 +57,7 @@
         </ion-col>
       </ion-slide>
       <ion-slide>
-        <ion-col >
+        <ion-col>
           <ion-avatar class="center ion-activatable ">
             <img src="../assets/trousers.svg" />
             <ion-ripple-effect type="bounded"></ion-ripple-effect>
@@ -67,7 +66,7 @@
         </ion-col>
       </ion-slide>
       <ion-slide>
-        <ion-col >
+        <ion-col>
           <ion-avatar class="center ion-activatable ">
             <img src="../assets/shirt.svg" />
             <ion-ripple-effect type="bounded"></ion-ripple-effect>
@@ -76,7 +75,7 @@
         </ion-col>
       </ion-slide>
       <ion-slide>
-        <ion-col >
+        <ion-col>
           <ion-avatar class="center ion-activatable ">
             <img src="../assets/shoe.svg" />
             <ion-ripple-effect type="bounded"></ion-ripple-effect>
@@ -85,7 +84,7 @@
         </ion-col>
       </ion-slide>
       <ion-slide>
-        <ion-col >
+        <ion-col>
           <ion-avatar class="center ion-activatable ">
             <img src="../assets/glasses.svg" />
             <ion-ripple-effect type="bounded"></ion-ripple-effect>
@@ -94,7 +93,7 @@
         </ion-col>
       </ion-slide>
       <ion-slide>
-        <ion-col >
+        <ion-col>
           <ion-avatar class="center ion-activatable ">
             <img src="../assets/bag.svg" />
             <ion-ripple-effect type="bounded"></ion-ripple-effect>
@@ -106,20 +105,17 @@
   </div>
   <br>
   <ion-list>
-    <ion-item-group>
-      <ion-item-divider>
-        <p class="bold ">DISCOVER</p>
-      </ion-item-divider>
-    </ion-item-group>
+    <ion-item-divider class="align-items">
+      <p class="bold margin-bottom ">DISCOVER</p>
+      <ion-button fill="clear" shape="round" class="padding-right" >
+        See all
+      </ion-button>
+    </ion-item-divider>
   </ion-list>
   <div>
     <ion-slides [options]="slideOptsTwo">
       <ion-slide>
-        <ion-card
-          tappable="true"
-          class="ion-activatable border-radius"
-          routerLink="/shirt"
-        >
+        <ion-card tappable="true" class="ion-activatable border-radius" routerLink="/shirt">
           <img src="../assets/aaron.png" />
           <ion-ripple-effect type="bounded"></ion-ripple-effect>
           <ion-card-content>
@@ -162,10 +158,10 @@
           </ion-card-content>
         </ion-card>
       </ion-slide>
-      
+
     </ion-slides>
   </div>
-<br>
+  <br>
   <ion-list>
     <ion-item-group>
       <ion-item-divider>
@@ -173,11 +169,11 @@
       </ion-item-divider>
     </ion-item-group>
   </ion-list>
-
+ 
   <div>
     <p class="title-pinky-red padding">HEAD</p>
   </div>
-  <div class="ion-activatable">
+  <div class="ion-activatable" routerLink="/head-cat">
     <ion-card tappable="true" class="border-radius">
       <img src="../assets/scarf.jpg" />
       <ion-ripple-effect type="bounded"></ion-ripple-effect>
